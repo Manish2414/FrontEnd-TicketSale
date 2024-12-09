@@ -32,7 +32,7 @@ function App() {
           setNotification('Error connecting to MetaMask.');
         });
     } else {
-      setNotification('Please install MetaMask to interact with the contract.');
+      setNotification('You need to install MetaMask to interact with this contract.');
     }
   }, []);
 
@@ -65,7 +65,7 @@ function App() {
       }
       setLoading(false);
     } else {
-      setNotification('Please connect wallet and provide a valid Ticket ID.');
+      setNotification('Please connect your wallet and provide a valid Ticket ID.');
     }
   };
   // Function to handle offer swap
@@ -94,7 +94,7 @@ function App() {
         setNotification('Error accepting offer: ' + error.message);
       }
     } else {
-      setNotification('Please connect wallet and provide a valid Ticket ID.');
+      setNotification('Please connect wallet and provide a valid Ticket ID to proceed.');
     }
   };
 
@@ -110,7 +110,7 @@ function App() {
         setNotification('Error fetching ticket ID: ' + error.message);
       }
     } else {
-      setNotification('Please provide a valid wallet address.');
+      setNotification('Please provide a valid wallet address to proceed.');
     }
   };
 
