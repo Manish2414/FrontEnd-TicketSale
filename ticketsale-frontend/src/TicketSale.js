@@ -1,9 +1,9 @@
-export const TicketSale_address = '0x806c6a130BD1B47a0Cd82366b532B6C1eD38Fa55';
+export const TicketSale_address = '0x831fbfd1b957D77EAF9aa91795D233B18db6b636';
 export const TicketSale_ABI = [
   {
     inputs: [
-      { internalType: 'uint256', name: '_numTickets', type: 'uint256' },
-      { internalType: 'uint256', name: '_price', type: 'uint256' },
+      { internalType: 'uint256', name: 'numTickets', type: 'uint256' },
+      { internalType: 'uint256', name: 'price', type: 'uint256' },
     ],
     stateMutability: 'nonpayable',
     type: 'constructor',
